@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "get me a roof"
+version = "0.1.0"
+description = ""
+authors = ["Max Vieweg <max.vieweg@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "get_me_a_roof" }]
+repository = "https://github.com/DSMaVie/get-me-a-roof"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.32.2"
+pydantic = "^2.6.4"
+selenium = "^4.18.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
