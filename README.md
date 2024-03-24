@@ -2,15 +2,9 @@
 
 This little demo is used to generate requests for job listings on (selected) german flat listing portals using AI.
 
-## Plan
+## Notes
 
-* Interface with Streamlit
-  * access restriction?
-  * clipboard button
-* Query <wg-gesucht.de> or <immoscout.de> and parse the listings
-  * optionally with login to see more data
-  * send entire html body to page or clean?
-* generate answer with some LLM
-  * which one?
-  * api or hosted? (api probably cheaper)
-  * settings to fine-tune text via reprompting / prompt-engineering
+* Immoscout is not easy to crawl and parse. Even with selenium the captchas disallow direct usage of the page. with copy and paste of raw html it works.
+  however, my parsing code is not very stable atm.
+* work on llm interface next.
+* hosting with <fly.io>
